@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, Arial, sans-serif;
+    background: #f3eef8;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    max-width: 90%;
+    background: #fff;
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(80, 50, 100, 0.1);
+}
+
+h1 {
+    color: #7761a8;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.quote-box {
+    background: #f8f5fc;
+    padding: 25px;
+    border-radius: 15px;
+    min-height: 200px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.quote-icon {
+    font-size: 40px;
+    color: #b6a2d5;
+}
+
+#quote {
+    font-size: 20px;
+    color: #444;
+    line-height: 1.8;
+    margin: 15px 0;
+}
+
+#author {
+    color: #8874ad;
+    font-size: 15px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: inherit;
+    transition: 0.3s;
+}
+
+#newQuote {
+    background: #8874ad;
+    color: white;
+}
+
+#copyQuote {
+    background: #e9e2f3;
+    color: #655184;
+}
+
+.buttons button:hover {
+    opacity: 0.85;
+    transform: translateY(-2px);
+}
+
+#message {
+    color: #8874ad;
+    margin-top: 15px;
+    font-size: 13px;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 25px 20px;
+    }
+
+    #quote {
+        font-size: 18px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+}
